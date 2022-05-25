@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container"><!-- flex container -->
+    <div class="outer-most-box">
+    <div class="box-o">
+      <div class="box"><!-- flex item -->
+        <a href="#">About</a>
+        <a href="#">Research</a>
+        <a href="#">Teaching</a>
+        <a href="#">Publications</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<style>
+/* [1] The container */
+/*.padding
+{
+height:600px;
+padding: 100px 100px 100px 400px;
+}*/
+.container {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 100vh;
+}
+.outer-most-box{
+  width: 50vw;
+   height:54vh;
+ display:flex;
+ justify-content: center; /* center items vertically, in this case */
+ align-items: center;     /* center items horizontally, in this case */
+}
+.box-o{
+  width: 40vw;
+   height:54vh;
+ display:flex;
+ justify-content: center; /* center items vertically, in this case */
+ align-items: center;     /* center items horizontally, in this case */
+}
+.box{  width: 100%;
+  height:100%;
+display:flex;
+flex-direction:row;
+justify-content: center; /* center items vertically, in this case */
+align-items: center;     /* center items horizontally, in this case */
+overflow:visible;
+}
+.box a{
+  flex: 1;
+  text-align: center;
+  font-size: 2.6vw;
+color: #964B00;
+text-decoration: none;
+
+  margin: 0.25em;
+  padding: 0.25em;
+
+}
+.box-o {
+background-image: url('SIDC2808_bv@2x.png');
+
+background-size:100% 100%;
+background-position: top right;
+background-repeat:no-repeat;
+transition: all 0.1s ease;
+}
+.box{visibility: hidden;}
+.outer-most-box:hover .box-o{
+  background-image: url('SIDC2808_bw@2x.png');
+  background-size:cover;
+  background-position:top right;
+  background-repeat:no-repeat;
+}
+.outer-most-box:hover .box a
+{visibility: visible;}
+.box a:hover{
+  color:white;
+  text-decoration: underline;
+  text-decoration-color:#964B00;
+}
+</style>
+</body>
+</html>

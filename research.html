@@ -1,0 +1,376 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="topnav"><!-- flex container -->
+        <a href="contact.html">Contact</a>
+        <a href="pub.html">Publications</a>
+        <a href="teach.html">Teaching</a>
+        <a class="active" href="reasearch.html">Research</a>
+        <a href="about.html">About</a>
+  </div>
+  <div class="container">
+    <div class="box box-left">
+      <div class="my-image">
+        <img src="SIDC2813@2x.png">
+      </div>
+      <div class="name">
+        <p>Sanchit Chaturvedi</p>
+      </div>
+      <div class="work">
+        <p>PhD student</p>
+      </div>
+      <div class="place">
+        <p>Stanford</p>
+      </div>
+      <div class="bottom-box">
+        <div class="bottom-box-0">
+        </div>
+        <div class="bottom-box-1">
+        <div class="math">
+          <h3>MATHEMATICS</h3>
+        </div>
+      <div class="email">
+          <p>sanchat@stanford.edu</p>
+      </div>
+    </div>
+    <div class="bottom-box-2">
+      <img src="pattern_T-shirt11@2x.png">
+    </div>
+    </div>
+  </div>
+  <div class="box box-right">
+  <div class="box box-right-heading">
+    <h1>Brief description of research interests</h1>
+  </div>
+  <div class="box box-right-comment">
+    <p>(Click on title below to show/hide)</p>
+  </div>
+
+  <button type="button" class="collapsible">Stability of vacuum for
+    collisional kinetic models.</button>
+  <div class="content">
+    <p> On physical grounds, it is desirable to account for collisions amongst particles to understand rare gases.
+      The Boltzmann equation is widely used to describe rare gases with binary collisions. It models the evolution of
+      particle probability density function as a function of time which solves a transport equation with a nonlinear term that
+      accounts for the binary collisions.</p>
+      <p>Both long and short range interactions can be accomodated in the equation.
+      Short range interaction are modelled using transport equation with a collisional term that is zero order.
+      Whereas long range interaction are described using a nonlocal operator
+      which involves derivatives of the probability density function.</p>
+      <p>In the near vacuum regime, one expects that the collisions are very rare and hence the nonlinear term can be treated
+      perturbatively. In fact, <a href="https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-95/issue-2/The-Boltzmann-equation--global-existence-for-a-rare-gas/cmp/1103941523.full">Illner--Shinbrot</a>
+       proved that for short range interactions, this is in fact true and the dynamics is
+      governed by dispersion coming from the linear transport operator. </p>
+      <p>Establishing the same for long range interaction proved to be much harder. Recently <a href="https://arxiv.org/abs/1807.07551">Luk</a>
+      proved stability of vacuum using dispersion from linear transport for Landau equation (an approximation for Boltzmann) with moderately soft-potentials.
+      I proved a <a href="https://arxiv.org/abs/2001.07208">similar theorem</a> for Landau equation with hard potential and then for <a href="https://arxiv.org/abs/2005.12257">
+        Boltzmann</a> with moderately soft potentials.
+    </p>
+  </div>
+  <button type="button" class="collapsible">Phase mixing, Landau damping and enhanced dissipation.</button>
+  <div class="content">
+    <p>Landau first observed a decay mechanism for linearized Vlasov--Poisson system (which is used to model plasmas) on bounded domains which is different from
+      dispersion or dissipation. This decay mechanism can be observed easily in fourier space for the linear transport equation. Basically,
+    information is transported from lower frequency in velocity to higher frequency. Another way to think is that the transport operator homogenizes
+    initial data and velocity averaged probability density function (also called the density) converges to a constant.</p>
+  <p>The decay for density in the nonlinear case was only recently understood by <a href="https://arxiv.org/abs/0904.2760">Mouhot--Villani</a>.
+  In a physical plasmas, typically one also has weak collisions which is modelled using the Landau collisional kernel. The action of transport in conjunction with the
+collisions gives enhanced dissipation in addition Landau damping. This was done by <a href="https://arxiv.org/abs/1704.00425">Bedrossian<a> for a nonlinear
+model related to Fokker--Plank using Fourier analytic techniques. But it is not clear how to generalize this technique to the Landau kernel since
+it seems very difficult to take Fourier transform in v due to the complicated form of Landau. To bypass this in conjuction with Jonathan Luk and Toan Ngyuen, I used vector field method and energy methods
+to prove the analogue of theorem of Bedrossian in <a href="https://arxiv.org/abs/2104.05692">https://arxiv.org/abs/2104.05692</a>.<br>
+<p>Finally in joint work with Jonathan Luk, I am trying to understand phase mixing in context of gravitational Vlasov--Poisson and Einstein--Vlasov
+in presence of an external potential (for example think of a planet or Schwarzschild black hole). See <a href="https://arxiv.org/abs/2109.12402">https://arxiv.org/abs/2109.12402</a> for a linear preliminary result
+in 1D.</p>
+  </div>
+  <button type="button" class="collapsible">Viscous effects on shock formation for
+  compressible fluids.</button>
+  <div class="content">
+    <p>It is well known that inviscid Burgers equation forms shocks (gradient blow up) starting from smooth initial data.
+    In fact, this is also quite classical now for 1D system of conservation laws including compressible Euler. The case of higher dimensions
+  is much less understood. But thanks to combined efforts of Alinhac, Christodoulou, Luk--Speck, Buckmaster--Skholler--Vicol
+shock formation has been established in higher dimensions for an open set of smooth data.</p>
+<p>Physically, fluids tend to have small but non-zero viscosity. In presence of viscosity, we expect solutions to remain smooth but as noted for zero
+viscosity we have singularities. Thus there is something happening in this zero viscosity limit. It would be very interesting to understand how viscosity affects shock formation, i.e.
+what does a viscous solution look like near the shock formation point. In an upcoming work with <a href="https://colegraham.net/">Graham</a> we develop an
+asymptotic expansion (in viscosity) for the solution to viscous Burgers equation. In particular, this gives us an understanding of the zero
+viscosity limit. We hope to extend this work to 1D systems and then to compressible Euler in higher dimensions.    </p>
+</div>
+
+<style>
+/* [1] The container */
+/*.padding
+{
+height:600px;
+padding: 100px 100px 100px 400px;
+}*/
+@font-face {
+    font-family: 'nimbus_monoregular';
+    src: url('nimbusmono-regular-webfont.woff2') format('woff2'),
+         url('nimbusmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'david_clmbold';
+    src: url('davidclm-bold-webfont.woff2') format('woff2'),
+         url('davidclm-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'benjamin_franklinregular';
+    src: url('benjaminfranklin-webfont.woff2') format('woff2'),
+         url('benjaminfranklin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'david_clmmedium';
+    src: url('davidclm-medium-webfont.woff2') format('woff2'),
+         url('davidclm-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+  background-image: url('Untitled_Artwork.jpg');
+  background-size:200%;
+  background-position: 74% 10%;
+}
+.container {
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    min-height: 100vh;
+}
+.box-left{
+  justify-content: center;
+  align-items: center;
+  position:sticky;
+ top:10vh;
+ left:5vw;
+  width: 23vw;
+   height:60vh;
+   margin-left:5vw;
+   float:left;
+   background-color:white;
+   opacity:.95;
+   flex-direction: column;
+
+}
+.my-image{
+  padding-top: 5%;
+  width:100%;
+  height:55%;
+  justify-content: center;
+  align-items: center;
+}
+.my-image img{
+
+width:100%;
+height:90%;
+padding-top:1%;
+object-fit:contain;
+overflow:hidden;
+}
+.name{
+  width:100%;
+  height:5%;
+  font-family: 'david_clmbold';
+  color:black;
+  text-align: center;
+  font-size:1.5vw;
+  margin-top: -8%;
+  padding-bottom: 1%;
+  }
+  .work
+  {
+     width:100%;
+   height:5%;
+   font-family: 'david_clmmedium';
+   color:black;
+   text-align: center;
+   font-size:1.2vw;
+   margin-top: -8%;
+   padding-bottom: 0.7%;
+  }
+  .place
+  {
+    width:100%;
+  height:5%;
+  font-family: 'david_clmmedium';
+  color:black;
+  text-align: center;
+  font-size:1.2vw;
+  margin-top: -8%;
+  }
+  .bottom-box{
+    padding-top: 10%;
+    display:flex;
+    flex-direction: row;
+    height: 20%;
+    width:100%;
+    overflow:hidden;
+  }
+  .bottom-box-0{
+    width:20%;
+    height:100%;
+  }
+  .bottom-box .bottom-box-1{
+    display: flex;           /* establish flex container */
+    flex-direction: column;
+    justify-content: center; /* center items vertically, in this case */
+    height: 100%;
+    width:60%;
+  }
+  .bottom-box-1 .math{
+    width:100%;
+    height:50%;
+    font-family: 'david_clmbold';
+    color:black;
+    text-align: center;
+    font-size:1.5vw;
+    margin-bottom:-4.8%;
+
+  }
+  .bottom-box-1 .email{
+    width:100%;
+    height:50%;
+    font-family: 'nimbus_monoregular';
+    color:black;
+    text-align: center;
+    font-size:1vw;
+  }
+  .bottom-box-2{
+    height:100%;
+    width:20%;
+  }
+  .bottom-box-2 img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+    object-position: bottom;
+  }
+.box-right
+{
+  width: 65vw;
+  height:auto;
+  float:right;
+  margin-left:5vw;
+  margin-right: 5vw;
+  background-color:white;
+  min-height:80vh;
+  opacity:.95;
+  padding:3%;
+  font-size: 1vw;
+  font-weight: bolder;
+  text-align:left;
+  font-family: 'david_clmbold';
+}
+.box-right .box-right-heading{
+  font-size: 1.2vw;
+  font-family:'david_clmbold';
+  letter-spacing: 0.15vw;
+  color:black;
+  line-height: .05;
+}
+.box-right .box-right-comment{
+  font-size: 0.8vw;
+  font-family:'david_clmbold';
+  color:black;
+  margin-top:-1%;
+}
+.box-right .collapsible {
+  font-family: 'nimbus_monoregular';
+  color:black;
+  background-color:white;
+    cursor: pointer;
+  padding: 2%;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2vw;
+}
+
+.box-right .active, .collapsible:hover {
+  font-weight:bold;
+  font-size:1.5vw;
+  text-decoration:underline;
+}
+
+ .content {
+  padding: 0 3%;
+  display: none;
+  overflow: hidden;
+  font-size:1vw;
+  color:black;
+  font-family: 'nimbus_monoregular';
+}
+.content a{
+  text-color:blue;
+  text-decoration:none;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  width:93vw;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: 'nimbus_monoregular';
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top: 0;
+  padding-bottom:0;
+ border-radius: 3vh;
+  text-decoration: none;
+  font-size: 1.5vw;
+  margin-top:5vh;
+  margin-bottom:5vh;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+
+  font-weight: bolder;
+}
+
+</style>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

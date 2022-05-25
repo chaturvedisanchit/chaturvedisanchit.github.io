@@ -1,0 +1,129 @@
+<html>
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body scroll="no" style="overflow: hidden; margin: 0%; padding: 0%;">
+
+  <div style="width:1px; height:1px; visibility:hidden; overflow:hidden">
+    <img src="Untitled_Artwork.jpg" >
+</div>
+  <div class="container"><!-- flex container -->
+    <div class="outer">
+
+    <div class="inner">
+      <a>Sanchit Chaturvedi</a>
+    <img class="image1" src="Untitled_Artwork2.png" />
+      <div class="box"><!-- flex item -->
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="teach.html">Teaching</a>
+        <a href="pub.html">Publications</a>
+        <a href="contact.html">Contact</a>
+  </div>
+  </div>
+</div>
+</div>
+
+<style>
+/* [1] The container */
+/*.padding
+{
+height:600px;
+padding: 100px 100px 100px 400px;
+}*/
+@font-face {
+    font-family: 'benjamin_franklinregular';
+    src: url('benjaminfranklin-webfont.woff2') format('woff2'),
+         url('benjaminfranklin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {
+    flex-direction: row;  /* make main axis vertical */
+    width:100vw;
+    height:100vh;
+    overflow:-moz-hidden-unscrollable;
+    justify-content: center;
+align-items: center;
+}
+.outer{
+  display:flex;
+      flex-direction: row;
+  position:relative;
+min-height:100vh;
+aspect-ratio:6581/4519;
+overflow:hidden;
+box-shadow: 0 0 5px 10px #181530;
+
+
+}
+.inner{
+  display:flex;
+      flex-direction: row;
+      justify-content: center;
+  align-items: center;
+min-width:100%;
+min-height:100%;
+aspect-ratio:6581/4519;
+background-image: url('Untitled_Artwork.jpg');
+background-size:cover;
+background-position:25% 75%;
+background-repeat:no-repeat;
+overflow:hidden;
+font-family: Garamond, serif;
+font-size: 12px;
+color: rgba(0, 0, 0, 0);
+}
+
+.image1 {
+  position:absolute;
+  max-height:14.5%;
+  top:35.1%;
+  right:26.3%;
+  opacity:0;
+}
+.box{  width: 80%;
+  height:100%;
+display:flex;
+flex-direction:row;
+position:fixed;
+top: 12.2%;
+}
+.box a{
+  flex: 1;
+  padding-left: 2%;
+  text-align: center;
+  font-size: 1.8vw;
+  font-family: 'benjamin_franklinregular';
+color: white;
+text-decoration: none;
+
+
+}
+.box{visibility: hidden;}
+
+.outer:hover .inner{
+  transform: scale(1.2);
+-webkit-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;}
+.inner:hover .image1
+{
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity:1;
+}
+.inner:hover .box a
+{visibility: visible;}
+.box a:hover{
+  font-family: 'benjamin_franklinregular';
+  color:white;
+  font-weight: bold;
+}
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container"><!-- flex container -->
+
+      <div class="box"><!-- flex item -->
+        <a href="#">About</a>
+        <a href="#">Research</a>
+        <a href="#">Teaching</a>
+        <a href="#">Publications</a>
+        <a href="#">Contact</a>
+      </div>
+
+      </div>
+
+<style>
+/* [1] The container */
+/*.padding
+{
+height:600px;
+padding: 100px 100px 100px 400px;
+}*/
+.container {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 100vh;
+}
+.box{  width: 40vw;
+  height:54vh;
+display:flex;
+flex-direction:row;
+justify-content: center; /* center items vertically, in this case */
+align-items: center;     /* center items horizontally, in this case */
+overflow:visible;
+}
+.box a{
+  flex: 1;
+  text-align: center;
+  margin: 0.25em;
+  padding: 0.25em;
+}
+.box {
+
+background-image: url('SIDC2808_bv@2x.png');
+background-size:100% 100%;
+background-position: top right;
+background-repeat:no-repeat;
+transition: all 0.03s ease;
+}
+
+.box:hover{
+  background-image: url('SIDC2808_bw@2x.png');
+  background-size:cover;
+  background-position:top right;
+  background-repeat:no-repeat;
+}
+.box a:hover{
+  font-weight:bold;}
+</style>
+</body>
+</html>
