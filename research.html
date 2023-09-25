@@ -1,6 +1,9 @@
 <html>
 <head>
+<title>Research of Sanchit Chaturvedi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This page contains research description of Sanchit Chaturvedi who is a math PhD student at Stanford."/>
+
 </head>
 <body>
   <div class="topnav"><!-- flex container -->
@@ -11,6 +14,17 @@
         <a href="about.html">About</a>
   </div>
   <div class="container">
+    <div class="mobnav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="contact.html">Contact</a>
+      <a href="pub.html">Publications</a>
+      <a href="teach.html">Teaching</a>
+      <a class="active" href="research.html">Research</a>
+      <a href="about.html">About</a>
+  </div>
+  <span class="bttn" style="font-size:35px;cursor:pointer;color:grey;" onclick="openNav()">&#9776;</span>
+</div>
     <div class="box box-left">
       <div class="my-image">
         <img src="SIDC2813@2x.png">
@@ -42,7 +56,7 @@
   </div>
   <div class="box box-right">
   <div class="box box-right-heading">
-    <h1>Brief description of research interests</h1>
+    <p>Research description</p>
   </div>
   <div class="box box-right-comment">
     <p>(Click on title below to show/hide)</p>
@@ -98,6 +112,9 @@ what does a viscous solution look like near the shock formation point. In an upc
 asymptotic expansion (in viscosity) for the solution to viscous Burgers equation. In particular, this gives us an understanding of the zero
 viscosity limit. We hope to extend this work to 1D systems and then to compressible Euler in higher dimensions.    </p>
 </div>
+<img id="logo" src="pattern_T-shirt11@2x.png">
+</div>
+</div>
 
 <style>
 /* [1] The container */
@@ -141,10 +158,150 @@ padding: 100px 100px 100px 400px;
     font-style: normal;
 
 }
+@media screen and (max-width: 900px) {
+  body{
+    background-image: url('Untitled_Artwork.jpg');
+    background-size:cover;
+    background-position: 74% 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .topnav{
+    display:none;
+  }
+  .box-left{
+    display:none;
+  }
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+
+  .sidenav a {
+  padding: 8px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'nimbus_monoregular';
+  }
+
+  .sidenav a:hover {
+    font-weight: bolder;
+
+  }
+
+  .sidenav a.active {
+    font-weight: bolder;
+
+  }
+
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  .bttn{
+    position:absolute;
+    top:1vh;
+    left:2vw;
+  }
+  .container{
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    height:auto;
+}
+  .box-right{
+    position:absolute;
+    top:15vw;
+    width:85vw;
+    height:auto;
+    opacity:.9;
+    background-color:white;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-bottom: 10vh;
+    font-family: 'nimbus_monoregular';
+  font-size:1.1rem;
+  }
+  .box-right .box-right-heading{
+    font-size: 2.1rem;
+    font-family:'david_clmbold';
+    letter-spacing: 0.15vw;
+    color:black;
+    line-height: .05;
+  }
+  .box-right .box-right-comment{
+    font-size: 0.8rem;
+    font-family:'david_clmbold';
+    color:black;
+    margin-top:-1%;
+  }
+  .box-right .collapsible {
+    font-family: 'nimbus_monoregular';
+    color:black;
+    background-color:white;
+      cursor: pointer;
+    padding: 2%;
+    width: 100%;
+    height:auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.4rem;
+  }
+
+  .box-right .active, .collapsible:hover {
+    font-weight:bold;
+    font-size:1.5rem;
+    text-decoration:underline;
+    height:auto;
+  }
+
+   .content {
+    padding: 0 3%;
+    display: none;
+    overflow: hidden;
+    font-size:1.1rem;
+    color:black;
+    font-family: 'nimbus_monoregular';
+  }
+  .content a{
+    text-color:blue;
+    text-decoration:none;
+  }
+  #logo{
+    position:absolute;
+    width:10vw;
+    height:10vh;
+    right:2vw;
+    bottom:0;
+    object-fit:contain;
+  }
+}
+@media screen and (min-width: 900px) {
+
 body{
   background-image: url('Untitled_Artwork.jpg');
   background-size:200%;
   background-position: 74% 10%;
+  background-attachment: fixed;
+}
+.mobnav{display:none;}
+#logo{
+  display:none;
 }
 .container {
     display: flex;           /* establish flex container */
@@ -299,12 +456,12 @@ overflow:hidden;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 
 .box-right .active, .collapsible:hover {
   font-weight:bold;
-  font-size:1.5vw;
+  font-size:1.5rem;
   text-decoration:underline;
 }
 
@@ -312,7 +469,7 @@ overflow:hidden;
   padding: 0 3%;
   display: none;
   overflow: hidden;
-  font-size:1vw;
+  font-size:1.1rem;
   color:black;
   font-family: 'nimbus_monoregular';
 }
@@ -337,7 +494,7 @@ overflow:hidden;
   padding-bottom:0;
  border-radius: 3vh;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.3rem;
   margin-top:5vh;
   margin-bottom:5vh;
 }
@@ -354,7 +511,7 @@ overflow:hidden;
 
   font-weight: bolder;
 }
-
+}
 </style>
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -370,6 +527,17 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+</script>
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "100vw";
+document.getElementById("main").style.marginLeft = "100vw";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
 }
 </script>
 </body>

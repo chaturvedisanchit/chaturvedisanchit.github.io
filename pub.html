@@ -1,6 +1,9 @@
 <html>
 <head>
+<title>Publications of Sanchit Chaturvedi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This page contains publications of Sanchit Chaturvedi who is a math PhD student at Stanford."/>
+
 </head>
 <body>
   <div class="topnav"><!-- flex container -->
@@ -11,6 +14,17 @@
     <a href="about.html">About</a>
   </div>
   <div class="container">
+    <div class="mobnav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="contact.html">Contact</a>
+      <a class="active" href="pub.html">Publications</a>
+      <a href="teach.html">Teaching</a>
+      <a href="research.html">Research</a>
+      <a href="about.html">About</a>
+  </div>
+  <span class="bttn" style="font-size:35px;cursor:pointer;color:grey;" onclick="openNav()">&#9776;</span>
+</div>
     <div class="box box-left">
       <div class="my-image">
         <img src="SIDC2813@2x.png">
@@ -41,24 +55,32 @@
     </div>
   </div>
     <div class="box box-right">
+      <div class="pub-head">
+      <h1>Publications</h1>
+    </div>
+    <p>6. <a href="https://arxiv.org/abs/2204.01170">The inviscid limit of viscous Burgers at
+       nondegenerate shock formation</a>, with
+        <a href="https://colegraham.net/">Cole Graham</a>, preprint, 2022.</p>
       <p>5. <a href="https://arxiv.org/abs/2109.12402">Phase mixing for
         solutions to 1D transport equation in a confining potential</a>,
         with <a href="https://web.stanford.edu/~jluk/">Jonathan Luk</a>,
-        To appear in <strong>Kinetic and related models</strong>, 2021.</p>
+       <strong>Kinetic and related models</strong>, doi:10.3934/krm.2022002, 2022.</p>
         <p>4. <a href="https://arxiv.org/abs/2104.05692">The
           Vlasov-Poisson-Landau system in the weakly collisional regime</a>,
           with <a href="https://web.stanford.edu/~jluk/">Jonathan Luk</a> and
           <a href="http://www.personal.psu.edu/ttn12/">Toan Nguyen</a>,
-          preprint, 2021.</p>
+          To appear in <strong>Journal of American Math Society</strong>, 2022.</p>
           <p>3. <a href="https://arxiv.org/abs/2005.12257">Stability of vacuum
             for the Boltzmann Equation with moderately soft potentials</a>,
             <strong>Annals of PDE</strong>, 7:15, 2021.</p>
             <p>2. <a href="https://arxiv.org/abs/2001.07208">Stability of vacuum
                for the Landau equation with hard potentials</a>,
-              preprint, 2020.</p>
+              To appear in <strong>Probability and Mathematical Physics</strong>, 2022.</p>
               <p>1. <a href="https://arxiv.org/abs/1910.11866">Local existence
                 for the Landau Equation with hard potentials</a>,
                 preprint, 2019.</p>
+                <img id="logo" src="pattern_T-shirt11@2x.png">
+
     </div>
   </div>
 
@@ -104,10 +126,114 @@ padding: 100px 100px 100px 400px;
     font-style: normal;
 
 }
+@media screen and (max-width: 900px) {
+  body{
+    background-image: url('Untitled_Artwork.jpg');
+    background-size:cover;
+    background-position: 74% 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+  .box-right .pub-head{
+    font-size: 1.2rem;
+    font-family:'david_clmbold';
+    letter-spacing: 0.15vw;
+    color:black;
+  }
+  .topnav{
+    display:none;
+  }
+  .box-left{
+    display:none;
+  }
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+
+  .sidenav a {
+  padding: 8px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'nimbus_monoregular';
+  }
+
+  .sidenav a:hover {
+    font-weight: bolder;
+
+  }
+
+  .sidenav a.active {
+    font-weight: bolder;
+
+  }
+
+  .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  .bttn{
+    position:absolute;
+    top:1vh;
+    left:2vw;
+  }
+  .container{
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    height:auto;
+}
+  .box-right{
+    position:absolute;
+    top:15vw;
+    width:85vw;
+    height:auto;
+    opacity:.95;
+    background-color:white;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-bottom: 10vh;
+    font-family: 'nimbus_monoregular';
+  font-size:1.1rem;
+  }
+
+  #logo{
+    position:absolute;
+    width:10vw;
+    height:10vh;
+    right:2vw;
+    bottom:0;
+    object-fit:contain;
+  }
+}
+@media screen and (min-width: 900px) {
 body{
   background-image: url('Untitled_Artwork.jpg');
   background-size:200%;
   background-position: 74% 10%;
+  background-attachment: fixed;
+
+}
+.mobnav{
+  display:none;
+}
+#logo{
+  display:none;
 }
 .container {
     display: flex;           /* establish flex container */
@@ -188,6 +314,12 @@ overflow:hidden;
     width:20%;
     height:100%;
   }
+  .box-right .pub-head{
+    font-size: 1.2rem;
+    font-family:'david_clmbold';
+    letter-spacing: 0.15vw;
+    color:black;
+  }
   .bottom-box .bottom-box-1{
     display: flex;           /* establish flex container */
     flex-direction: column;
@@ -235,7 +367,10 @@ overflow:hidden;
   min-height:80vh;
   opacity:.95;
   font-family: 'nimbus_monoregular';
-font-size:1.2vw;
+font-size:1.2rem;
+}
+.box-right .img-mob{
+  display:none;
 }
 .box-right a{
   color:blue;
@@ -258,7 +393,7 @@ font-size:1.2vw;
   padding-bottom:0;
  border-radius: 3vh;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.3rem;
   margin-top:5vh;
   margin-bottom:5vh;
 }
@@ -275,7 +410,18 @@ font-size:1.2vw;
 
   font-weight: bolder;
 }
-
+}
 </style>
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "100vw";
+document.getElementById("main").style.marginLeft = "100vw";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 </body>
 </html>

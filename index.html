@@ -13,7 +13,9 @@
     <div class="outer">
 
     <div class="inner">
-      <a>Sanchit Chaturvedi</a>
+      <div class="name">
+        <h1>Sanchit Chaturvedi</h1>
+      </div>
     <img class="image1" src="Untitled_Artwork2.png" />
       <div class="box"><!-- flex item -->
         <a href="about.html">About</a>
@@ -21,6 +23,9 @@
         <a href="teach.html">Teaching</a>
         <a href="pub.html">Publications</a>
         <a href="contact.html">Contact</a>
+  </div>
+  <div class="job">
+    <h1>Math PhD</h1>
   </div>
   </div>
 </div>
@@ -41,8 +46,13 @@ padding: 100px 100px 100px 400px;
     font-style: normal;
 
 }
-
-.container {
+@media screen and (max-width: 900px) {
+  .container{
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
     flex-direction: row;  /* make main axis vertical */
     width:100vw;
     height:100vh;
@@ -63,7 +73,7 @@ box-shadow: 0 0 5px 10px #181530;
 }
 .inner{
   display:flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
   align-items: center;
 min-width:100%;
@@ -86,12 +96,47 @@ color: rgba(0, 0, 0, 0);
   right:26.3%;
   opacity:0;
 }
+.name{
+  width:100vw;
+  flex-direction:row;
+  position:fixed;
+  top:10%;
+
+}
+.name h1{
+  font-family: 'benjamin_franklinregular';
+color: white;
+text-decoration: none;
+font-size: 2.5vw;
+letter-spacing:.6vw;
+text-align: left;
+
+
+}
+.job{
+  width:100vw;
+  flex-direction:row;
+  position:fixed;
+  bottom:10%;
+
+}
+.job h1{
+  font-family: 'benjamin_franklinregular';
+color: white;
+text-decoration: none;
+font-size: 2.5vw;
+letter-spacing:.6vw;
+text-align: right;
+
+
+}
+
 .box{  width: 80%;
-  height:100%;
+  height:30%;
 display:flex;
 flex-direction:row;
 position:fixed;
-top: 12.2%;
+top: 15%;
 }
 .box a{
   flex: 1;
@@ -124,6 +169,12 @@ transition: all .5s ease-in-out;}
   font-weight: bold;
 }
 
+.inner:hover .name h1
+{visibility: hidden;}
+.inner:hover .job h1
+{visibility: hidden;}
+}
+}
 </body>
 
 </html>
